@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Hammersmith One", sans-serif;
+    box-sizing: border-box;
+    max-width: 1536px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    height: 120px;
+    width: 1536px;
+    z-index: 9999;
+    position: fixed;
+}
+
+.logo {
+    height: 120px;
+    width: 160px;
+    margin-left: 11vh;
+    float: left;
+}
+.nav-link
+{
+    float: right;
+    padding-top: 43px;
+}
+.nav-link a
+{
+    text-decoration: none;
+    color: #CBC2B5;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: 0.2rem solid transparent;
+    margin: 20px;
+    padding-bottom: 5px;
+    transition: border-bottom 0.5s;
+}
+.nav-link a:hover
+{
+    border-bottom: 0.2rem solid #2E2219;
+}
+.sticky
+{
+    width: 100%;
+    background-color: #2E2219;
+    box-shadow: 0 1px 1px #CBC2B5;
+    z-index: 9999;
+}
+
+
+
+header {
+    background-image: linear-gradient(rgba(0.7, 0.7, 0.7, 0.5), rgba(0.7, 0.7, 0.7, 0.5)), url("./components/assets/main-background.png");
+    object-fit: cover;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    max-width: 1550px;
+    z-index: -1;
+}
+
+.header-h1 {
+    position: absolute;
+    top: 405px;
+    left: 100px;
+    color: #CBC2B5;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.header .btn {
+    position: absolute;
+    top: 535px;
+    left: 105px;
+    color: #2E2219;
+    font-size: 20px;
+    background-color: #CBC2B5;
+    border: 1px solid #CBC2B5;
+    padding: 9px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.header .btn:hover {
+    background-color: transparent;
+    border: 1px solid #CBC2B5;
+    color: #CBC2B5;
+}
+
+
+.section-meals
+{
+    object-fit: cover;
+    background-image: linear-gradient(rgba(0.7, 0.7, 0.7, 0.5), rgba(0.7, 0.7, 0.7, 0.5)), url("./assets/1.png");
+    background-size: cover;
+    /* overflow: hidden; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.meal-heading h1
+{
+    color: #CBC2B5;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 40px;
+}
+.meal-contanier
+{
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    float: left;
+}
+
+.meal
+{
+    height: 200px;
+    width: 200px;
+}
+.container-img
+{
+    object-fit: cover;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px;
+}
+.content
+{
+    height: 200px;
+    width: 200px;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    color: #CBC2B5;
+    backdrop-filter: blur(5px);
+    background-color: #2e221994;
+    border-radius: 10px;
+    text-transform: uppercase;
+    visibility: hidden;
+    transition: all 0.5s visibility 0.1s;
+}
+.content h3
+{
+    padding-top: 15px;
+}
+
+.meal:hover .content
+{
+    visibility: visible;
+}
+.btn-cart
+{
+    margin-top: 20px;
+    margin-left: 25px;
+    color: #2E2219;
+    font-size: 20px;
+    background-color: #CBC2B5;
+    border: 1px solid #CBC2B5;
+    padding: 9px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-cart:hover
+{
+    background-color: transparent;
+    border: 1px solid #CBC2B5;
+    color: #CBC2B5;
+}
+
+.section-about
+{
+    object-fit: cover;
+    background-image: linear-gradient(rgba(0.7, 0.7, 0.7, 0.5), rgba(0.7, 0.7, 0.7, 0.5)), url("./assets/About-us-back.png");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.about-h1 {
+    color: #CBC2B5;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.detail {
+    margin: 60px;
+}
+
+.about-h4 {
+    text-align: justify;
+    color: #CBC2B5;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.about-btn {
+    float: right;
+    font-size: 20px;
+    color: #2E2219;
+    background-color: #CBC2B5;
+    border: 1px solid #CBC2B5;
+    padding: 9px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.about-btn:hover {
+    background-color: transparent;
+    border: 1px solid #CBC2B5;
+    color: #CBC2B5;
+}
+.section-contact
+{
+    object-fit: cover;
+    background-image: linear-gradient(rgba(0.7, 0.7, 0.7, 0.5), rgba(0.7, 0.7, 0.7, 0.5)), url("./assets/2-background-img.png");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.contact-h1
+{
+    color: #CBC2B5;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.contact-container {
+    position: relative;
+    left: 0;
+    top: 35px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup-content {
+    background-color: #2e2219b4;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 20px;
+    color: #CBC2B5;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #2E2219;
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    backdrop-filter: blur(10px);
+}
+
+.popup-content h1
+{
+    text-align: center;
+    margin: 10px 0;
+}
+.popup-content label
+{
+    font-size: 25px;
+    float: left;
+    margin: 20px 0;
+}
+.popup-content input
+{
+    float: left;
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: .2rem solid #CBC2B5;
+    transition: all 0.5s;
+}
+.popup-content input:focus
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    caret-color: #2E2219;
+    border-bottom: .2rem solid #2E2219;
+}
+.popup-content input:hover
+{
+    border-bottom: .2rem solid #2E2219;
+}
+.sign-btn
+{
+    position: relative;
+    top: 320px;
+    left: 90px;
+    color: #2E2219;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #CBC2B5;
+    border: 1px solid #CBC2B5;
+    padding: 9px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.6s;
+    text-decoration: none;
+}
+.sign-btn:hover
+{
+    background-color: transparent;
+    border: 1px solid #CBC2B5;
+    color: #CBC2B5;
+}
+
+.footer {
+    height: 25vh;
+    background-color: #000000;
+    position: relative;
+}
+
+.footer-text {
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 570px;
+}
+
+.p2 {
+    position: absolute;
+    top: 25px;
+    left: 90px;
+}
+
+.footer-li {
+    position: relative;
+    top: 150px;
+}
+
+.footer-li li {
+    list-style: none;
+    float: left;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.footer-li a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: .2rem solid transparent;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.footer-icon {
+    float: right;
+}
+
+.footer-icon a {
+    margin-right: 50px;
+}
+
+.fa-brands,
+.fa-solid {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 25px;
+}
+
+.footer-li-sign {
+    position: relative;
+    top: 150px;
+    margin-left: 15px;
+}
+
+.footer-li-sign li {
+    list-style: none;
+    /* display: inline-block; */
+    float: left;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.footer-li-sign a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: .2rem solid transparent;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.section-signin
+{
+    object-fit: cover;
+    background-image: linear-gradient(rgba(0.7, 0.7, 0.7, 0.5), rgba(0.7, 0.7, 0.7, 0.5)), url("./assets/2-background-img.png");
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.container-signin
+{
+    position: relative;
+    left: 35px;
+    top: 250px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.popup-content-signin
+{
+    background-color: #2e2219b4;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 20px;
+    color: #CBC2B5;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #2E2219;
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    backdrop-filter: blur(10px);
+}
+
+.popup-content-signin h1
+{
+    text-align: center;
+    margin: 10px 0;
+}
+.popup-content-signin label
+{
+    font-size: 25px;
+    float: left;
+    margin: 20px 0;
+}
+.popup-content-signin input
+{
+    float: left;
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    color: #CBC2B5;
+    font-size: 15px;
+    border-bottom: .2rem solid #CBC2B5;
+    transition: all 0.5s;
+}
+.popup-content-signin input:focus
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    caret-color: #CBC2B5;
+    border-bottom: .2rem solid #2E2219;
+}
+.popup-content-signin input:hover
+{
+    border-bottom: .2rem solid #2E2219;
+}
+.signin-p
+{
+    margin-top: 15px;
+    float: left;
+}
+
+.signin-p a
+{
+    color: #CBC2B5;
+}
+.signin-btn
+{
+    position: relative;
+    top: 260px;
+    left: 43px;
+    color: #2E2219;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #CBC2B5;
+    border: 1px solid #CBC2B5;
+    padding: 9px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.6s;
+    text-decoration: none;
+}
+.signin-btn:hover
+{
+    background-color: transparent;
+    border: 1px solid #CBC2B5;
+    color: #CBC2B5;
+}
